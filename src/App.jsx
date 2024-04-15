@@ -10,16 +10,16 @@ function App() {
   return (
     <>
       <Router>
-        <Header/>
         <div>
+          <Header/>
           <Routes>
             <Route path="/" element={<MainPage/>}></Route>
             <Route path="/login" element={<Login/>}></Route>
             <Route path="/register" element={<Register/>}></Route>
           </Routes>
-          <ToastContainer/>
         </div>
       </Router>
+      <ToastContainer/>
     </>
   )
 }
